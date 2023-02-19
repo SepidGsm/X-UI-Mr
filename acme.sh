@@ -315,7 +315,9 @@ uninstall() {
     rm -rf ~/.acme.sh
     green "Acme  One-click application certificate script has been completely uninstalled. Bye Bye!"
 }
-
+back() {
+   x-ui
+}
 menu() {
     clear
     echo -e "      __  __ ____                 __  __           _   _ ___      "
@@ -337,7 +339,7 @@ menu() {
     echo -e " ${GREEN}8.${PLAIN} Manual renewal of certificate"
     echo -e " ${GREEN}9.${PLAIN} Switch certificate issuer"
     echo " -------------"
-    echo -e " ${GREEN}0.${PLAIN} Exit script"
+    echo -e " ${GREEN}0.${PLAIN} Exit script Back Panel"
     echo ""
     read -rp "Please enter the option [0-9]: " NumberInput
     case "$NumberInput" in
@@ -350,7 +352,7 @@ menu() {
         7) revoke_cert ;;
         8) renew_cert ;;
         9) switch_provider ;;
-        *) exit 1 ;;
+        *) back;;
     esac
 }
 
