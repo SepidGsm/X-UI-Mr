@@ -1,11 +1,13 @@
 # xXx-ui
 
-امکانات
+#امکانات
 
 - همه ی قسمت ها به صورت انگلیسی و فارسی و چینی (تنظیمات سمت سرور + رابط کاربری سمت سرور + رابط کاربری وب)
-- نظارت بر وضعیت سیستم
+- دریافت لینک سایت های ایرانی برای رد کردن از ای پی خارج
+- آپدیت کانفیگ سایت ژئوسایت برای ایران
+- به روز رسانی برای اضافه کردن کاربر به جای ایمیل
 - پشتیبانی از پروتکل چند کاربره، web page visualization operation
-- چندین UUID را می توان به عنوان کاربر ها برای تنظیمات Vmess و Vless با QR codes مجزا اضافه کرد
+- چندین UUID را می توان به عنوان کاربر ها برای تنظیمات Vmess و Vless و Trojan با QR codes مجزا اضافه کرد
 - پروتکل های پشتیبانی شده: vmess, vless, trojan, shadowsocks, dokodemo-door, socks, http
 - پشتیبانی برای تنظیم حالت های بیشتر انتقال
 - آمار ترافیک، محدود کردن ترافیک، محدودیت با زمان انقضا 
@@ -13,8 +15,6 @@
 - پشتیبانی از پنل دسترسی https (نام دامنه + گواهی ssl خود را می توان استفاده کرد)
 - ربات تلگرام برای توابع اولیه و اعلان ها
 - پشتیبانی از برنامه گواهینامه SSL با یک کلیک و تمدید خودکار
-- می توان به طور ایمن از v2-ui مهاجرت کرد 
-- می تواند به طور ایمن از نسخه قبلی X-UI (CH/EN) بدون از دست دادن خروجی به روزرسانی شود
 - برای موارد پیکربندی پیشرفته تر، برای جزئیات به پنل مراجعه کنید
 
 # Install & Upgrade
@@ -27,25 +27,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/MrCenTury/xXx-UI/master/instal
 apt-get install certbot -y
 certbot certonly --standalone --agree-tos --register-unsafely-without-email -d yourdomain.com
 certbot renew --dry-run
-```
-
-# 2023-02-20
-
-- Update the Jason file for IP hiding changes and receiving the required data
-- Geosite site config update for Iran
-- Update to add user instead of email
-- multi-user vmess - vless - trojan
-- Multi UUIDs can be added as users for Vmess and Vless & trojan configurations with separate QR codes
-- Support checking system status information
-- support multi protocols and multi users
-- support protocols：vmess、vless、trojan、shadowsocks、dokodemo-door、socks、http
-- support many transport method including tcp、udp、ws、kcp etc
-- traffic counting,traffic restrict and time restrcit
-- support custom configuration template
-- support https access fot WebUI
-- support SSL cert issue by Acme
-- support telegram bot notify and control
-- more functions in control menu  
+``` 
 
 ## shortcut  
 After Installation，you can input `x-ui`to enter control menu，current menu details：
