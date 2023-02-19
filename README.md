@@ -1,10 +1,23 @@
 # xXx-ui
-> **Disclaimer: This project is only for personal learning and communication, please do not use it for illegal purposes, please do not use it in a production environment**
 
-xray panel supporting multi-protocol, **Multi-lang (English,Farsi,Chinese)**
+امکانات
+
+- همه ی قسمت ها به صورت انگلیسی و فارسی و چینی (تنظیمات سمت سرور + رابط کاربری سمت سرور + رابط کاربری وب)
+- نظارت بر وضعیت سیستم
+- پشتیبانی از پروتکل چند کاربره، web page visualization operation
+- چندین UUID را می توان به عنوان کاربر ها برای تنظیمات Vmess و Vless با QR codes مجزا اضافه کرد
+- پروتکل های پشتیبانی شده: vmess, vless, trojan, shadowsocks, dokodemo-door, socks, http
+- پشتیبانی برای تنظیم حالت های بیشتر انتقال
+- آمار ترافیک، محدود کردن ترافیک، محدودیت با زمان انقضا 
+- قالب های پیکربندی xray قابل تنظیم
+- پشتیبانی از پنل دسترسی https (نام دامنه + گواهی ssl خود را می توان استفاده کرد)
+- ربات تلگرام برای توابع اولیه و اعلان ها
+- پشتیبانی از برنامه گواهینامه SSL با یک کلیک و تمدید خودکار
+- می توان به طور ایمن از v2-ui مهاجرت کرد 
+- می تواند به طور ایمن از نسخه قبلی X-UI (CH/EN) بدون از دست دادن خروجی به روزرسانی شود
+- برای موارد پیکربندی پیشرفته تر، برای جزئیات به پنل مراجعه کنید
 
 # Install & Upgrade
-
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/MrCenTury/xXx-UI/master/install.sh)
 ```
@@ -16,11 +29,13 @@ certbot certonly --standalone --agree-tos --register-unsafely-without-email -d y
 certbot renew --dry-run
 ```
 
-# 2023-02-19
+# 2023-02-20
+
 - Update the Jason file for IP hiding changes and receiving the required data
 - Geosite site config update for Iran
 - Update to add user instead of email
 - multi-user vmess - vless - trojan
+- Multi UUIDs can be added as users for Vmess and Vless & trojan configurations with separate QR codes
 - Support checking system status information
 - support multi protocols and multi users
 - support protocols：vmess、vless、trojan、shadowsocks、dokodemo-door、socks、http
@@ -82,7 +97,6 @@ After Installation，you can input `x-ui`to enter control menu，current menu de
 - Debian 8+
 
 # telegram
-
 [Group](https://t.me/x_ui_fa)
 
 # credits
