@@ -19,7 +19,7 @@
 
 # Install & Upgrade
 ```
-bash <(curl -Ls https://raw.githubusercontent.com/MrCenTury/xXx-UI/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/SepidGsm/X-UI-Mr/master/install.sh)
 ```
 
 # SSL
